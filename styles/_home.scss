@@ -1,0 +1,159 @@
+.burgers {
+    position: relative;
+
+    h3 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+.burgers--item {
+    position: relative;
+    float: left;
+    width: 25%;
+    height: min-content;
+    overflow: hidden;
+    line-height: 0;
+    cursor: pointer;
+    background: #000000;
+
+    &:hover {
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            display: block;
+            width: 25px;
+            height: 25px;
+            margin: auto;
+            background: url(https://images.prismic.io/carlostest/4a89ff0c-fe3b-4f4e-a766-bd737402292e_hover.png?auto=compress,format);
+        }
+
+        img {
+            transform: scale(1.01);
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        opacity: .5;
+    }
+
+    &:first-child {
+        width: 50%;
+        height: auto;
+
+        img {
+            height: 100%;
+        }
+
+        & h3::before {
+            content: "Burger del mes";
+            position: relative;
+            top: -35px;
+            display: block;
+            font-family: "thirsty-soft";
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+    }
+}
+
+.home {
+
+    .big-two {
+        display: inline-flex;
+    }
+
+    .big-three {
+        position: relative;
+        top: -3px;
+    }
+}
+
+.popup {
+
+    &.off {
+        display: none;
+    }
+
+    &.on {
+        position: fixed;
+        top: 0%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        display: flex;
+        width: 100%;
+        margin: auto;
+        background: #000000EB;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popup--container {
+        position: relative;
+        display: flex;
+        max-width: 900px;
+        max-height: 450px;
+    }
+
+    .popup-img {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .popup--content {
+        width: 50%;
+        padding: 40px;
+        color: #000000;
+        background: #FFFFFF;
+        box-sizing: border-box;
+    }
+
+    .popup--title {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .popup--hr {
+        height: 4px;
+        margin: 20px 0 45px;
+        background: #000000;
+        border: none;
+    }
+
+    .popup--close {
+        position: absolute;
+        top: -35px;
+        right: 0;
+
+        img {
+            transform: rotate(45deg);
+        }
+    }
+
+    .alergenos {
+        position: absolute;
+        bottom: 15px;
+
+        a {
+            color: #BEBEBE;
+        }
+    }
+}

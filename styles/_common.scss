@@ -1,0 +1,227 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "TradeGothic";
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+a {
+    color: #FFFFFF;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 15px;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid;
+    transition: .3s;
+
+    &:hover {
+        background: #FFFFFF;
+        transition: .3s;
+
+        & a {
+            color: #000000;
+        }
+    }
+}
+
+.follow {
+    display: flex;
+    width: 100%;
+    padding: 40px 20px;
+    font-family: "thirsty-soft";
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 300;
+    }
+
+    img {
+        width: 48px;
+        height: 48px;
+        margin-left: 25px;
+        fill: #FFFFFF;
+    }
+}
+
+/* NAV FOOTER */
+
+.hover-effect {
+    position: relative;
+    padding: 17px 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: #FFFFFF;
+        opacity: 0;
+        transition: all 250ms ease;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: #FFFFFF;
+        opacity: 0;
+        transition: all 250ms ease;
+    }
+
+    &:hover::before {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+
+    &:hover::after {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+}
+
+.big-two {
+    display: flex;
+
+    .big-two--item {
+        position: relative;
+        width: 50%;
+        overflow: hidden;
+    }
+
+    .big-two--img {
+        line-height: 0;
+        background: #000000;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            opacity: .5;
+        }
+    }
+
+    & .big-two--item:hover img {
+        transform: scale(1.01);
+    }
+
+    .big-two--content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+        text-transform: uppercase;
+
+        h2 {
+            width: 60%;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        a {
+            position: relative;
+            width: 60%;
+            padding: 20px;
+            text-align: center;
+        }
+    }
+}
+
+.big-three {
+    display: flex;
+
+    .big-three--item {
+        position: relative;
+        width: 33.333%;
+        overflow: hidden;
+    }
+
+    .big-three--img {
+        line-height: 0;
+        background: #000000;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            opacity: .5;
+        }
+    }
+
+    & .big-three--item:hover img {
+        transform: scale(1.01);
+    }
+
+    h2:hover a::before {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+
+    h2:hover a::after {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+
+    h2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        margin: 0;
+        font-size: 3rem;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+
+        a {
+            position: relative;
+            padding: 15px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background: #FFFFFF;
+                opacity: 0;
+                transition: all 250ms ease;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background: #FFFFFF;
+                opacity: 0;
+                transition: all 250ms ease;
+            }
+        }
+    }
+}

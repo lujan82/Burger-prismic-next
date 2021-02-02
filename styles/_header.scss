@@ -1,0 +1,23 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: 500px;
+
+    /*  background: url(https://images.prismic.io/carlostest/7ec0c5fc-8f5b-40bd-9dd9-8639de70c70a_burgers.jpg?auto=compress,format);
+    background-position: center;
+    background-size: cover; */
+
+    h1 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: .67em 0;
+        font-size: 5em;
+        text-align: center;
+    }
+
+    svg {
+        fill: #FFFFFF;
+    }
+}

@@ -1,0 +1,56 @@
+footer {
+    padding: 75px 20px 5px;
+}
+
+.rrss {
+    display: flex;
+    justify-content: center;
+
+    svg {
+        width: 25px;
+        height: auto;
+        fill: white;
+        transition: .3s;
+
+        &:hover {
+            fill: #7A7A7A;
+            transition: .3s;
+        }
+    }
+}
+
+.rrss--container {
+    display: flex;
+}
+
+.rrss--item {
+    margin: 0 12px;
+}
+
+.footer--nav {
+    margin: 50px;
+
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    li {
+        margin: 0 10px;
+    }
+}
+
+.footer--info {
+    color: $color-grey;
+    text-align: center;
+
+    a {
+        color: $color-grey;
+        transition: .3s;
+
+        &:hover {
+            color: #FFFFFF;
+            transition: .3s;
+        }
+    }
+}
